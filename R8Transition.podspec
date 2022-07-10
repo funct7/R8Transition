@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'R8Transition'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of R8Transition.'
+  s.summary          = 'Create your custom transition the way UIKit intended you to.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This library provides types that adopt confusing transition protocols that UIKit provides,
+making it easy for clients to create custom transitions the way UIKit intends you to.
+
+Unlike other transition related libraries that write up their own code to make things work,
+which means users of the library need to learn the library first without knowing whether their use case is supported,
+this library is more of a basic implementation of protocols that the UIKit requires,
+providing the confusing boilerplate implementation and requiring only the parameters that users really care about.
                        DESC
 
   s.homepage         = 'https://github.com/funct7/R8Transition'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'funct7' => 'joshuaparkwm@gmail.com' }
+  s.author           = { 'funct7' => 'funct7.io@gmail.com' }
   s.source           = { :git => 'https://github.com/funct7/R8Transition.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

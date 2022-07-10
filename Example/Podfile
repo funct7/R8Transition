@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'R8Transition_Example' do
+  pod 'R8Transition', :path => '../'
+
+  target 'R8Transition_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

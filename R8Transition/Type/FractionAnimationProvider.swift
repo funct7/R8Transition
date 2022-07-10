@@ -20,6 +20,6 @@ public enum FractionAnimationProviders {
         let block: (CGFloat) -> Void
     }
     
-    static func create(_ block: @escaping (CGFloat) -> Void) -> FractionAnimationProvider { _Instance(block: block) }
+    static public func create(_ block: @escaping (CGFloat) -> Void) -> FractionAnimationProvider { _Instance(block: block) }
     
 }

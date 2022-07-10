@@ -1,0 +1,16 @@
+PODS:
+  - R8Transition (0.1.0)
+
+DEPENDENCIES:
+  - R8Transition (from `../`)
+
+EXTERNAL SOURCES:
+  R8Transition:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  R8Transition: 8a21a5f95d3975ca73afe72dabdc41eabfb6c5f8
+
+PODFILE CHECKSUM: e039f0d541465b56a39c11aaa90632c69081d36e
+
+COCOAPODS: 1.11.3

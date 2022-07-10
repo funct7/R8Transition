@@ -40,7 +40,7 @@ which means users need to learn the library first without even knowing whether t
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'R8Transition/Classes/**/*'
+  s.source_files = 'R8Transition/{Type,Extension}/**/*.swift'
   
   # s.resource_bundles = {
   #   'R8Transition' => ['R8Transition/Assets/*.png']

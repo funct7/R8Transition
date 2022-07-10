@@ -18,13 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-This library provides types that adopt confusing transition protocols that UIKit provides,
-making it easy for clients to create custom transitions the way UIKit intends you to.
+Implementing a custom transition animation for `UIViewController`s is not that simple out of the box.
+THe UIKit framework requires that various protocols be adopted if we were to do it "properly",
+and to be honest we really would like for things to just work care only about animations.
+
+`R8Transtion` bridges this gap between the requirements of the UIKit framework and iOS developers' needs
+by providing basic implementations of these protocols;
+all clients need to provide are animation parameters, and the rest will be provided by the library.
 
 Unlike other transition related libraries that write up their own code to make things work,
-which means users of the library need to learn the library first without knowing whether their use case is supported,
-this library is more of a basic implementation of protocols that the UIKit requires,
-providing the confusing boilerplate implementation and requiring only the parameters that users really care about.
+which means users need to learn the library first without even knowing whether their use case is supported,
+`R8Transtion` does things the way Apple intended.
                        DESC
 
   s.homepage         = 'https://github.com/funct7/R8Transition'

@@ -24,8 +24,17 @@ open class CustomTransitionViewController : UIViewController {
     /// - Warning: Abstract method.
     open var animationProvider: FractionAnimationProvider { fatalError("implement") }
     
-    open override func viewDidLoad() {
-        super.viewDidLoad()
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        setUpCustomTransition()
+    }
+    
+    public required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setUpCustomTransition()
+    }
+    
+    private func setUpCustomTransition() {
         modalPresentationStyle = .custom
         transitioningDelegate = transitionAnimator
     }

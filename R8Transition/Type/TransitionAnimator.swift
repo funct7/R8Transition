@@ -10,7 +10,7 @@ import UIKit
 /**
  A class that implements protocols that are required to run a custom transition.
  
- This class can be used when the same animation parameters and animation block can be used for both presentaiton and dismissal.
+ This class can be used when the same animation parameters and animation block can be used for both presentation and dismissal.
  
  - Note: Since this class is an "animator" class, clients using this class instance should set the properties of the `UIViewController` instance
     that will be animated by the instance of this class, and also call `UIViewController.present(_:animated:completion)`

@@ -21,9 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61A-IV-iJf">
-                                <rect key="frame" x="169" y="729" width="53" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61A-IV-iJf">
+                                <rect key="frame" x="168.66666666666666" y="729" width="53" height="30"/>
                                 <state key="normal" title="Share..."/>
                                 <connections>
                                     <action selector="shareAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZcP-77-0Wy"/>
@@ -31,6 +30,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="61A-IV-iJf" secondAttribute="bottom" constant="51" id="5G5-Bo-gdD"/>
+                            <constraint firstItem="61A-IV-iJf" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lOP-Rp-IM4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -112,6 +115,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uxY-Bh-jVi" userLabel="Bottom Padding">
                                                 <rect key="frame" x="0.0" y="159" width="342" height="34"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="3WQ-oG-EFF"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -132,7 +138,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lT6-UI-I1n" firstAttribute="bottom" secondItem="T0S-vy-J7y" secondAttribute="top" id="9V4-aA-VA4"/>
-                            <constraint firstItem="uxY-Bh-jVi" firstAttribute="height" secondItem="T0S-vy-J7y" secondAttribute="height" id="IeS-Bp-fjL"/>
+                            <constraint firstItem="uxY-Bh-jVi" firstAttribute="height" secondItem="T0S-vy-J7y" secondAttribute="height" priority="900" id="IeS-Bp-fjL"/>
                             <constraint firstItem="lT6-UI-I1n" firstAttribute="trailing" secondItem="T0S-vy-J7y" secondAttribute="trailing" id="Mym-qr-OGZ"/>
                             <constraint firstAttribute="bottom" secondItem="T0S-vy-J7y" secondAttribute="bottom" id="Ngf-N3-dBc"/>
                             <constraint firstItem="lNl-6a-CSa" firstAttribute="leading" secondItem="lT6-UI-I1n" secondAttribute="leading" id="OOd-9O-1Lt"/>

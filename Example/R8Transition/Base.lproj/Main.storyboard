@@ -123,6 +123,9 @@
                                     <constraint firstAttribute="trailing" secondItem="MJ2-mT-O3R" secondAttribute="trailing" constant="24" id="eod-7f-P80"/>
                                     <constraint firstItem="MJ2-mT-O3R" firstAttribute="top" secondItem="lNl-6a-CSa" secondAttribute="top" constant="30" id="fgg-p2-ZQ7"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ejc-Km-tDW" appends="YES" id="dgj-nx-rGe"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lT6-UI-I1n"/>
@@ -146,9 +149,21 @@
                     <connections>
                         <outlet property="bottomSheetBottomToViewBottom" destination="d29-wB-qTm" id="Se7-ox-WyW"/>
                         <outlet property="bottomSheetView" destination="lNl-6a-CSa" id="Xyq-1w-71B"/>
+                        <outlet property="panGesture" destination="ejc-Km-tDW" id="y7r-pF-gRD"/>
+                        <outlet property="panGestureHandler" destination="sbq-DY-aUq" id="Rz0-33-UbN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMZ-Ql-Hq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ejc-Km-tDW">
+                    <connections>
+                        <action selector="gestureAction:" destination="sbq-DY-aUq" id="28w-no-hiV"/>
+                    </connections>
+                </panGestureRecognizer>
+                <customObject id="sbq-DY-aUq" customClass="PanGestureHandler" customModule="R8Transition">
+                    <connections>
+                        <outlet property="viewController" destination="WQh-1p-m9g" id="cRl-Xn-yRR"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1025" y="134"/>
         </scene>

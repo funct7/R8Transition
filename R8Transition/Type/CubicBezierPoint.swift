@@ -1,6 +1,6 @@
 //
 //  CubicBezierPoint.swift
-//  Pods-R8Transition_Example
+//  R8Transition
 //
 //  Created by Josh Woomin Park on 2022/07/10.
 //

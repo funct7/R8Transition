@@ -1,23 +1,39 @@
 # R8Transition
 
-[![CI Status](https://img.shields.io/travis/funct7/R8Transition.svg?style=flat)](https://travis-ci.org/funct7/R8Transition)
-[![Version](https://img.shields.io/cocoapods/v/R8Transition.svg?style=flat)](https://cocoapods.org/pods/R8Transition)
-[![License](https://img.shields.io/cocoapods/l/R8Transition.svg?style=flat)](https://cocoapods.org/pods/R8Transition)
-[![Platform](https://img.shields.io/cocoapods/p/R8Transition.svg?style=flat)](https://cocoapods.org/pods/R8Transition)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange.svg)](https://swift.org/package-manager/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-iOS_13+-lightgrey.svg)](Package.swift)
+
+R8Transition helps build UIKit custom transition animations using the transition APIs Apple provides.
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo and open `Example/R8Transition.xcodeproj`.
 
 ## Requirements
 
+- iOS 13+
+- Swift 5
+
 ## Installation
 
-R8Transition is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+R8Transition is available through Swift Package Manager.
 
-```ruby
-pod 'R8Transition'
+In Xcode:
+
+1. Select `File > Add Package Dependencies...`
+2. Enter the package URL:
+
+```text
+https://github.com/funct7/R8Transition.git
+```
+
+In `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/funct7/R8Transition.git", from: "0.1.0"),
+]
 ```
 
 ## Author

@@ -3,7 +3,7 @@
 //  R8Transition_Example
 //
 //  Created by Josh Woomin Park on 2022/07/10.
-//  Copyright © 2022 CocoaPods. All rights reserved.
+//  Copyright © 2022 funct7. All rights reserved.
 //
 
 import UIKit

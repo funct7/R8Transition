@@ -34,3 +34,9 @@ Carthage/Build
 # `pod install` in .travis.yml
 #
 Example/Pods/
+
+### SwiftPM ###
+Packages
+.build/
+xcuserdata
+DerivedData/

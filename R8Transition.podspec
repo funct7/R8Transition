@@ -38,7 +38,7 @@ which means users need to learn the library first without even knowing whether t
   s.source           = { :git => 'https://github.com/funct7/R8Transition.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'R8Transition/{Type,Extension}/**/*.swift'
   
